@@ -1,13 +1,12 @@
 import { Component } from "@angular/core";
-import { MatButtonModule } from "@angular/material/button";
-import { NgIcon, provideIcons } from '@ng-icons/core';
-import { ionFlashOutline, ionShieldOutline, ionTrophyOutline } from '@ng-icons/ionicons';
-import { mainCardComponent } from "../../components/maincard/maincard.component";
+import { herosectionComponent } from "./sections/herosection/herosection.component";
+import { productcardsection } from "./sections/productcardsection/productcardsection.component";
+import { benefitsection } from "./sections/benefitsection/benefitsection.component";
+import { contactpricesection } from "./sections/contactpricesection/contactpricesection.component";
 
 @Component({
     templateUrl:'./homepage.component.html',
-    imports:[MatButtonModule, NgIcon,mainCardComponent],
-    viewProviders: [provideIcons({ ionFlashOutline, ionShieldOutline,ionTrophyOutline })]
+    imports:[herosectionComponent, productcardsection, benefitsection,contactpricesection],
 })
 
 export class HomePageComponent{
